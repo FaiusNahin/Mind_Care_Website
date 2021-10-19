@@ -27,10 +27,10 @@ const Header = () => {
                     {/* Header right */}
                     <Nav className="align-items-lg-end">
                         {
-                            user.uid ? <Navbar.Text className="mx-2" style={{ fontSize: '18px' }}>{user?.displayName}</Navbar.Text> : ''
+                            user.email || user.uid ? <Navbar.Text className="mx-2" style={{ fontSize: '18px' }}>{user?.displayName}</Navbar.Text> : ''
                         }
                         {
-                            user.uid ? <Nav.Link className="fs-5 mx-2" onClick={loggedOut} style={{ color: '#f06598', fontWeight: '500' }}>Log Out</Nav.Link> :
+                            user.email || user.uid ? <Nav.Link className="fs-5 mx-2" onClick={loggedOut} style={{ color: '#f06598', fontWeight: '500' }}>Log Out</Nav.Link> :
                                 <Nav.Link className="fs-5 mx-2" as={Link} to="/login" style={{ color: '#f06598', fontWeight: '500' }}>Login</Nav.Link>
                         }
                         <Nav.Link className="rounded-pill fs-5 mx-2" as={Link} to="/signup" style={{ color: '#ed145c', fontWeight: '500' }}>Sign Up</Nav.Link>
