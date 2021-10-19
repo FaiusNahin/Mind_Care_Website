@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+#service-details{
+    display: none;
+    transform: translate(0px,-250px);
+    width: 370px;
+    overflow: hidden;
+}
+
+.service img:hover{
+    opacity: 0.65;
+    transition: all 0.2s linear;
+}
+
+.service:hover #service-details{
+    display: block;
+    overflow: hidden;
+}
+
+#service-name{
+    font-family: 'Cormorant Garamond', serif;
+    transform: translate(0px,-60px);
+    background-color:#fd3074ca ;
+    width: 370px;
+    color: white;
+}
+.service:hover #service-name{
+    display:none;
+    transition: all 0.2s linear;
+    
+}
+#details-button{
+    background-color: white;
+    color: #e44982;
+    font-weight: 500;
+    padding: 12px 36px;
+    font-size: 18px;
+    border:0;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+#details-button:hover{
+    color: white;
+    background-color: #f53c80;
+    transition: all 0.2s linear;
+}
+
+#service-div{
+    width: 370px; 
+    height: 400px;
+}
+#service-div img{
+    width: 100%;
+    height: 100%;
+}
+@media only screen and (max-width:688px) {
+    #services-row{
+        padding:0px 6px !important;
+    }
+    #service-div{
+        width: 100%;
+    }
+    #service-div img{
+        width: 100% ;
+        height: 100% ;
+    }
+    #service-name{
+        width: 100% ;
+        padding-left: 10px !important;
+    }
+    #service-details{
+        width: 100% ;
+    }
+    #service-name{
+        transform: translate(0px,-52px);
+    }
+}

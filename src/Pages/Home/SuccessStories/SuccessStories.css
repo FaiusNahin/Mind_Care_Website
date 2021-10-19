@@ -1,0 +1,46 @@
+.success-container::before{
+    position: absolute;
+    content: '';
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: rgba(17, 17, 17, 0.6);
+}
+.success-container{
+    background-image: url('https://i.ibb.co/kGZqWd5/stories.jpg');
+    position: relative;
+    text-align: center;
+    padding: 80px 0px 180px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+#benifits{
+    z-index:1;
+}
+#benifits::after{
+    position: absolute;
+    top:200px;
+    content: '';
+    left: 50%;
+    bottom: 0px;
+    width: 62px;
+    height: 2px;
+    margin-left: -30px;
+    background-color: rgb(240, 101, 152);
+}
+#stories{
+    transform:translate(0px,-80px);
+}
+#fact-counter{
+    width:25%;
+    height:2px;
+}
+.counter-title{
+    font-size:20px;
+    font-style :italic;
+    color: rgb(56, 53, 53);
+}

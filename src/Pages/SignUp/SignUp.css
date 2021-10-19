@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+body{
+  font-family: 'Nunito Sans', sans-serif;
+}
+.form-container{
+  padding:92.5px 0px;
+}
+.welcome-img{
+  background-color: #464031;
+  background-blend-mode: overlay;
+  background-image: url(../../images/signup-login.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+  }
+#exampleInputEmail1{
+  font:inherit;
+  font-weight: 400;
+}
+.signup-button:hover{
+background-color: #c2064e!important;
+}
+.signin-button:hover{
+    background-color: #80807d !important;
+    color: white !important;
+}

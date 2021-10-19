@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
+#psychologist-container{
+background-color:rgba(211, 211, 211, 0.561);
+}
+#psychologist-img{
+margin-top: -65px;
+}
+#psychologist-heading{
+    font-family: 'Cormorant Garamond', serif;
+    font-size:50px;
+    font-weight: 700;
+    color:#dd1c5d;
+}
+#psychologist-info{
+    font-weight: 500;
+    color:#152d4e;
+}
+#appointment-button{
+    background-color:#e01357;
+    color: white;
+    font-weight: 500;
+    border-top-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+}
+#appointment-button:hover{
+background-color:#fb276e;
+}
