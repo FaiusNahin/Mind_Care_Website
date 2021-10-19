@@ -1,16 +1,15 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
-import slider1 from '../../../images/slider-1.jpg';
-import slider2 from '../../../images/slider-2.jpg';
-import slider3 from '../../../images/slider-3.jpg';
 
 const Banner = () => {
     return (
         <Carousel fade className="h-50">
+
+            {/* Slider-1 */}
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={slider1}
+                    src='https://i.ibb.co/Y7fgtHV/Young-parents-had-troubles-in-their-relationship-The-daughter-was-depressed-Pshycoterapist-solved-th.jpg'
                     style={{ filter: 'grayscale(50%)' }}
                     alt=""
                 />
@@ -18,10 +17,12 @@ const Banner = () => {
                     <h1>Best therapy makes Excellent yours <span style={{ color: '#f06598' }}>family</span></h1>
                 </Carousel.Caption>
             </Carousel.Item>
+
+            {/* Slider-2 */}
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={slider2}
+                    src='https://i.ibb.co/w4Yvhth/Young-angry-couple-after-therapy-session-with-family-psychologist.jpg'
                     style={{ filter: 'grayscale(50%)' }}
                     alt=""
                 />
@@ -29,10 +30,12 @@ const Banner = () => {
                     <h1>Councelling for your <span style={{ color: '#f06598' }}>better</span> life</h1>
                 </Carousel.Caption>
             </Carousel.Item>
+
+            {/* Slider-3 */}
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={slider3}
+                    src='https://i.ibb.co/Y7fgtHV/Young-parents-had-troubles-in-their-relationship-The-daughter-was-depressed-Pshycoterapist-solved-th.jpg'
                     style={{ filter: 'grayscale(50%)' }}
                     alt=""
                 />

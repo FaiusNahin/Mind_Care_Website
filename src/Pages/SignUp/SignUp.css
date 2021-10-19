@@ -8,7 +8,7 @@ body{
 .welcome-img{
   background-color: #464031;
   background-blend-mode: overlay;
-  background-image: url(../../images/signup-login.jpg);
+  background-image: url('https://i.ibb.co/Bs5W8BQ/signup-login.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 1000px;

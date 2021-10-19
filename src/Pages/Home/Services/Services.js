@@ -8,7 +8,8 @@ const Services = () => {
 
     return (
         <>
-            <div className="d-flex flex-column align-items-center justify-content-center pt-3">
+            {/* Servie Header */}
+            <div id="sevices" className="d-flex flex-column align-items-center justify-content-center pt-3">
                 <img className="" src="https://i.ibb.co/KwSJXsY/brain.jpg" alt="" style={{ width: '100px' }} />
                 <h1 className="" style={{ color: 'rgb(111 112 112)', fontFamily: 'Cormorant Garamond, serif', fontSize: '50px' }}>What we can offer</h1>
                 <p style={{ color: 'rgb(240, 101, 152)' }}>AFFORDABLE SERVICES</p>

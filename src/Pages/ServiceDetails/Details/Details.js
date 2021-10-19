@@ -11,6 +11,7 @@ const Details = () => {
     const details = services.filter(dt => dt.id === parseInt(detailId));
 
     return (
+        // Details
         <Container>
             <Row lg={2} md={1} sm={1} className="my-5">
                 {

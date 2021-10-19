@@ -6,10 +6,15 @@ import Footer from './Pages/Shared/Footer/Footer';
 import Details from './Pages/ServiceDetails/Details/Details';
 import SignUp from './Pages/SignUp/SignUp';
 import LogIn from './Pages/LogIn/LogIn';
+import AuthProvider from '../src/context/AuthProvider';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
+import NotFound from './Pages/NotFound/NotFound';
+import Seminars from './Pages/Seminar/Seminars/Seminars';
+import Appointment from './Pages/Appointment/Appointment';
 
 function App() {
   return (
-    <div>
+    <AuthProvider>
       <Router>
         <Header></Header>
         <Switch>
@@ -25,13 +30,22 @@ function App() {
           <Route path="/login">
             <LogIn></LogIn>
           </Route>
-          <Route path="/details/:detailId">
+          <PrivateRoute path="/details/:detailId">
             <Details></Details>
+          </PrivateRoute>
+          <PrivateRoute path="/appointment">
+            <Appointment></Appointment>
+          </PrivateRoute>
+          <PrivateRoute path="/seminars">
+            <Seminars></Seminars>
+          </PrivateRoute>
+          <Route path="*">
+            <NotFound></NotFound>
           </Route>
         </Switch>
         <Footer></Footer>
       </Router>
-    </div>
+    </AuthProvider>
   );
 }
 

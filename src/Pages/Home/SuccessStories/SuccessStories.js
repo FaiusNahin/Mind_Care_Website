@@ -7,6 +7,8 @@ import carol from '../../../images/carol.jpg';
 const SuccessStories = () => {
     return (
         <div>
+
+            {/* Success */}
             <Row className="success-container mx-0 ">
                 <Col className="d-flex flex-column align-items-center justify-content-center text-white px-3" id="benifits">
                     <h1>Success Stories of our Patients
@@ -14,9 +16,12 @@ const SuccessStories = () => {
                     <p className="fs-5 my-2">Thousands of people get benefit</p>
                 </Col>
             </Row>
+
+            {/* Stories */}
             <div style={{ backgroundColor: 'rgb(240, 101, 152)' }}>
                 <Container id="stories">
                     <Row lg={2} sm={1} className="">
+                        {/* Stories Card */}
                         <Col lg={6} sm={12} className="p-4">
                             <div className="d-flex flex-column flex-md-row bg-white" style={{ borderRadius: '7px', padding: '36px 30px' }}>
                                 <div className="mb-4">
@@ -42,6 +47,8 @@ const SuccessStories = () => {
                             </div>
                         </Col>
                     </Row>
+
+                    {/* Stories Bottom */}
                     <Row lg={4} md={2} sm={2} className="mt-5">
                         <Col lg={3} md={6} sm={6} className="d-flex flex-column justify-content-center align-items-center mb-3">
                             <h1 className="mb-0" style={{ fontSize: '50px', color: 'rgb(54 53 53)' }}>346</h1>
