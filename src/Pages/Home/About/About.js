@@ -9,7 +9,7 @@ const About = () => {
             <Row lg={2} sm={1} className="my-5 py-5">
 
                 {/* About Left Part */}
-                <Col lg={6} sm={12} className="d-flex flex-column justify-content-center px-0">
+                <Col lg={6} sm={12} className="d-flex flex-column justify-content-center px-3 ">
                     {/* about heading */}
                     <p className="fs-5 mb-0" style={{ fontStyle: 'italic', color: 'darkblue' }}>Who we are
                     </p>
