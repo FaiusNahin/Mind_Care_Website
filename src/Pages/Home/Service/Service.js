@@ -16,7 +16,7 @@ const Service = (props) => {
                     <h2>{name}</h2>
                 </div>
                 {/* Service Details */}
-                <div className="mx-auto ps-3" id="service-details">
+                <div className="mx-auto px-3" id="service-details">
                     <p className="text-white pb-3 fs-5">{description.slice(0, 60)} <Link className="text-decoration-none" to={`/details/${id}`} style={{ color: '#f53c80' }}>...see more</Link></p>
                     <Link to={`/details/${id}`}><button id="details-button">More details</button></Link>
                 </div>

@@ -5,7 +5,7 @@
     transform: translate(0px,-378px);
     width: 370px;
     overflow: hidden;
-    transition: all 0.2s linear;
+    transition: all 1s linear;
     background-color: rgba(98, 95, 95, 0.644);
     width:90%;
     height:90%;
@@ -31,7 +31,7 @@
 }
 .service:hover #service-name{
     display:none;
-    transition: all 0.2s linear;
+    transition: all 1s linear;
     
 }
 #details-button{
