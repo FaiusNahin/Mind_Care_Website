@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Login.css';
 import { Link } from 'react-router-dom';
 import { Col, Container, Row } from 'react-bootstrap';
 import useAuth from '../../hooks/useAuth';
@@ -26,13 +27,16 @@ const LogIn = () => {
             })
     }
 
+    // Input Email
     const handleEmail = e => {
         setEmail(e.target.value);
     }
+    // Input Password
     const handlePassword = e => {
         setPassword(e.target.value);
     }
 
+    // Handle Log In
     const handleLogIn = e => {
         e.preventDefault();
 
@@ -48,6 +52,7 @@ const LogIn = () => {
             });
     }
 
+    // Reset Password
     const handleResetPassword = () => {
         sendPasswordResetEmail(auth, email)
             .then(result => {
@@ -59,9 +64,9 @@ const LogIn = () => {
         <Container fluid>
             <Row lg={2} md={1} sm={1}>
 
-                {/* Login Left */}
+                {/* Login Left Part*/}
                 <Col lg={6} md={12} sm={12} className="form-container d-flex flex-column justify-content-center align-items-center">
-                    <h1 className="my-4 fw-bold" style={{ fontSize: '42px', color: 'rgb(80, 80, 80)' }}>
+                    <h1 className="my-4 fw-bold login-heading" style={{ fontSize: '42px', color: 'rgb(80, 80, 80)' }}>
                         Sign In to <span style={{ color: '#838484' }}>Mind</span>
                         <span style={{ color: '#f06598' }}>Care</span>
                     </h1>
@@ -74,7 +79,7 @@ const LogIn = () => {
 
 
                     {/* Login Form */}
-                    <form onSubmit={handleLogIn} className="" style={{ width: '60%' }}>
+                    <form onSubmit={handleLogIn} className="signup-form" style={{ width: '60%' }}>
                         <div className="my-4">
                             <label htmlFor="exampleInputEmail1" className="mb-1 fw-bold" style={{ color: '#505050' }}>Email</label>
                             <input onChange={handleEmail} type="email" className="form-control border border-2 text-black-50" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="mindcare@support.com" style={{ padding: '13px 15px' }} required />

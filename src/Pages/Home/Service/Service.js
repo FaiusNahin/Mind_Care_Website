@@ -8,7 +8,7 @@ const Service = (props) => {
 
     return (
         // Service Cart
-        <Col xl={4} lg={6} md={12} sm={12} className="service d-flex flex-column align-items-center" id="service">
+        <Col xl={4} lg={6} md={12} sm={12} className="service d-flex flex-column align-items-center px-0">
             <div className="mb-5" id="service-div">
                 <img className="" src={img} alt="" />
                 {/* Service Name */}

@@ -7,9 +7,9 @@ const Services = () => {
     const [services] = useServices();
 
     return (
-        <>
-            {/* Servie Header */}
-            <div id="sevices" className="d-flex flex-column align-items-center justify-content-center pt-3">
+        <div id="service" className="mx-0 px-3">
+            {/* Service Header */}
+            <div className="d-flex flex-column align-items-center justify-content-center pt-3">
                 <img className="" src="https://i.ibb.co/KwSJXsY/brain.jpg" alt="" style={{ width: '100px' }} />
                 <h1 className="" style={{ color: 'rgb(111 112 112)', fontFamily: 'Cormorant Garamond, serif', fontSize: '50px' }}>What we can offer</h1>
                 <p style={{ color: 'rgb(240, 101, 152)' }}>AFFORDABLE SERVICES</p>
@@ -25,7 +25,7 @@ const Services = () => {
                     }
                 </Row>
             </Container>
-        </>
+        </div>
     );
 };
 

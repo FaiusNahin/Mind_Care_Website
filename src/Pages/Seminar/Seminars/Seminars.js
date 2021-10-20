@@ -7,10 +7,10 @@ const Seminars = () => {
     const [seminars] = useSeminars();
 
     return (
-        <Container className="my-5">
+        <Container className="my-5 py-3">
             {/* Seminar Heading */}
-            <h1 className="fw-bold text-center py-5" style={{ fontFamily: 'Cormorant Garamond, serif', color: 'rgb(80, 80, 80)', fontSize: '50px' }}>Our Events & Seminar</h1>
-            <Row lg={2} md={1} sm={1} className="px-3">
+            <h1 className="fw-bold text-center py-4" style={{ fontFamily: 'Cormorant Garamond, serif', color: 'rgb(80, 80, 80)', fontSize: '50px' }}>Our Events & Seminar</h1>
+            <Row lg={2} md={1} sm={1} className="px-1">
                 {
                     seminars.map(seminar => <Seminar
                         key={seminar.id}

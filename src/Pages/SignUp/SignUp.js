@@ -17,18 +17,21 @@ const SignUp = () => {
     const [password, setPassword] = useState('');
     const [message, setMessage] = useState('');
 
-
+    // Input Name
     const handleName = e => {
         setName(e.target.value);
     }
+    // Input Email
     const handleEmail = e => {
         setEmail(e.target.value);
     }
+    // Input Password
     const handlePassword = e => {
         setPassword(e.target.value);
     }
 
-    const handleRegistration = e => {
+    // Handle Sign Up 
+    const handleSignUp = e => {
         e.preventDefault();
 
         if (password.length < 8) {
@@ -40,6 +43,7 @@ const SignUp = () => {
             return;
         }
 
+        // Create New User
         createUserWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
                 const user = userCredential.user;
@@ -53,6 +57,7 @@ const SignUp = () => {
             })
     }
 
+    // Update User Profile
     const setNewProfile = () => {
         updateProfile(auth.currentUser, {
             displayName: name
@@ -63,6 +68,7 @@ const SignUp = () => {
         });
     }
 
+    // Verify User Email
     const verifyEmail = () => {
         sendEmailVerification(auth.currentUser)
             .then(result => {
@@ -70,6 +76,7 @@ const SignUp = () => {
             })
     }
 
+    // Reset Password
     const handleResetPassword = () => {
         sendPasswordResetEmail(auth, email)
             .then(result => {
@@ -79,10 +86,10 @@ const SignUp = () => {
 
     return (
         <Container fluid>
-            {/* Sign Up Left */}
+            {/* Sign Up Left Part*/}
             <Row lg={2} md={1} sm={1}>
                 <Col lg={6} md={12} sm={12} className="form-container d-flex flex-column justify-content-center align-items-center">
-                    <h1 className="my-4 fw-bold" style={{ fontSize: '42px', color: '#838484' }}>Create an Account</h1>
+                    <h1 className="my-4 fw-bold signup-heading" style={{ fontSize: '42px', color: '#838484' }}>Create an Account</h1>
                     <div className="d-flex justify-content-evenly my-3 g-4" style={{ width: '16%' }}>
                         <button onClick={signInUsingGoogle} className="border border-0 bg-white"><img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="" /></button>
 
@@ -92,20 +99,24 @@ const SignUp = () => {
                     <h3 className="row my-0 text-success">{message}</h3>
 
                     {/* Sign Up Form*/}
-                    <form onSubmit={handleRegistration} style={{ width: '60%' }}>
+                    <form onSubmit={handleSignUp} className="signup-form" style={{ width: '60%' }}>
+                        {/* User Name */}
                         <div className="my-4">
                             <label htmlFor="exampleInputName" className="mb-1 fw-bold" style={{ color: '#505050' }}>Full Name</label>
                             <input onChange={handleName} type="text" className="form-control border border-2 " id="exampleInputName" aria-describedby="emailHelp" placeholder="Your Name" style={{ padding: '13px 15px' }} required />
                         </div>
+                        {/* User Email */}
                         <div className="my-4">
                             <label htmlFor="exampleInputEmail1" className="mb-1 fw-bold" style={{ color: '#505050' }}>Email</label>
                             <input onBlur={handleEmail} type="email" className="form-control border border-2 text-black-50" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="mindcare@support.com" style={{ padding: '13px 15px' }} required />
                         </div>
+                        {/* User Password */}
                         <div className="mt-4">
                             <label htmlFor="exampleInputPassword1" className="mb-1 fw-bold" style={{ color: '#505050' }}>Password</label>
                             <input onBlur={handlePassword} type="password" className="form-control border border-2 text-black-50" id="exampleInputPassword1" placeholder="Must 8 Characters" style={{ padding: '13px 15px' }} required />
                         </div>
                         <p className="text-danger"></p>
+                        {/* Reset */}
                         <div className="text-center">
 
                             <a onClick={handleResetPassword} className="text-decoration-none text-secondary" href="">Forgot your password?</a>

@@ -1,5 +1,8 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
+import slider1 from '../../../images/slider-1.jpg';
+import slider2 from '../../../images/slider-2.jpg';
+import slider3 from '../../../images/slider-3.jpg';
 
 const Banner = () => {
     return (
@@ -9,7 +12,7 @@ const Banner = () => {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src='https://i.ibb.co/Y7fgtHV/Young-parents-had-troubles-in-their-relationship-The-daughter-was-depressed-Pshycoterapist-solved-th.jpg'
+                    src={slider1}
                     style={{ filter: 'grayscale(50%)' }}
                     alt=""
                 />
@@ -22,7 +25,7 @@ const Banner = () => {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src='https://i.ibb.co/w4Yvhth/Young-angry-couple-after-therapy-session-with-family-psychologist.jpg'
+                    src={slider2}
                     style={{ filter: 'grayscale(50%)' }}
                     alt=""
                 />
@@ -35,7 +38,7 @@ const Banner = () => {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src='https://i.ibb.co/Y7fgtHV/Young-parents-had-troubles-in-their-relationship-The-daughter-was-depressed-Pshycoterapist-solved-th.jpg'
+                    src={slider3}
                     style={{ filter: 'grayscale(50%)' }}
                     alt=""
                 />

@@ -9,7 +9,7 @@ const About = () => {
             <Row lg={2} sm={1} className="my-5 py-5">
 
                 {/* About Left Part */}
-                <Col lg={6} sm={12} className="d-flex flex-column justify-content-center px-3 ">
+                <Col lg={6} sm={12} className="d-flex flex-column justify-content-center px-3 mb-5">
                     {/* about heading */}
                     <p className="fs-5 mb-0" style={{ fontStyle: 'italic', color: 'darkblue' }}>Who we are
                     </p>
@@ -19,7 +19,7 @@ const About = () => {
                     {/* about info */}
                     <div className="row px-4 gx-3">
                         <div className="column col-md-6 col-sm-6 col-xs-12 px-2">
-                            <ul style={{ fontSize: '18px' }}>
+                            <ul className="my-0" style={{ fontSize: '18px' }}>
                                 <li>Personal Disorder</li>
                                 <li>Couple Therapy</li>
                                 <li>Health Psychology</li>
@@ -28,7 +28,7 @@ const About = () => {
                         </div>
 
                         <div className="column col-md-6 col-sm-6 col-xs-12 px-2">
-                            <ul style={{ fontSize: '18px' }}>
+                            <ul className="my-0" style={{ fontSize: '18px' }}>
                                 <li>Healthy Lifestyles</li>
                                 <li>Guided Self-Change</li>
                                 <li>Individual Counseling</li>
@@ -39,8 +39,8 @@ const About = () => {
                 </Col>
 
                 {/* About Right Part */}
-                <Col lg={6} sm={12} className="d-flex align-items-center justify-content-center">
-                    <img className="w-75" src='https://i.ibb.co/d6DNGzn/In-the-psychologist-s-office-Man-and-woman-talking.jpg' alt="" />
+                <Col lg={6} sm={12} className="d-flex align-items-center justify-content-center px-0">
+                    <img style={{ width: '80%' }} src='https://i.ibb.co/d6DNGzn/In-the-psychologist-s-office-Man-and-woman-talking.jpg' alt="" />
                 </Col>
             </Row>
         </Container>

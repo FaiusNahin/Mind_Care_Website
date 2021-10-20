@@ -23,11 +23,11 @@ const SuccessStories = () => {
                     <Row lg={2} sm={1} className="">
                         {/* Stories Card */}
                         <Col lg={6} sm={12} className="p-4">
-                            <div className="d-flex flex-column flex-md-row bg-white" style={{ borderRadius: '7px', padding: '36px 30px' }}>
-                                <div className="mb-4">
-                                    <img className="img-fluid" src={ralph} alt="" />
+                            <div className="d-flex flex-column flex-md-row bg-white" id="stories-1" style={{ borderRadius: '7px', padding: '36px 30px' }}>
+                                <div className="mb-4 me-4">
+                                    <img className="img-fluid" id="stories-img-1" src={ralph} alt="" />
                                 </div>
-                                <div className="ps-4">
+                                <div className="">
                                     <h3>Ralph Edwards</h3>
                                     <p className="fs-5 mb-2" style={{ color: 'rgb(240,101,152)', fontStyle: 'italic' }}>I am more than staisfied with doctor</p>
                                     <p className="fs-5 text-muted mb-1">Ann was the first therapist (we had seen 2 prior to her) to recognize our issues, understand them, and us, and lead us on the path to healing and recovery.</p>
@@ -35,11 +35,11 @@ const SuccessStories = () => {
                             </div>
                         </Col>
                         <Col lg={6} sm={12} className="p-4">
-                            <div className="d-flex flex-column flex-md-row bg-white" style={{ borderRadius: '7px', padding: '36px 30px' }}>
-                                <div className="mb-4">
-                                    <img className="img-fluid" src={carol} alt="" />
+                            <div className="d-flex flex-column flex-md-row bg-white" id="stories-2" style={{ borderRadius: '7px', padding: '36px 30px' }}>
+                                <div className="mb-4 me-4">
+                                    <img className="img-fluid" id="stories-img-2" src={carol} alt="" />
                                 </div>
-                                <div className="ps-4">
+                                <div className="">
                                     <h3>Carol Fox</h3>
                                     <p className="fs-5 mb-2" style={{ color: 'rgb(240,101,152)', fontStyle: 'italic' }}>I have you to thank for helping me</p>
                                     <p className="fs-5 text-muted mb-1">I followed my therapist to this agency…the agency is set-up well and operates smoothly. I appreciate the newsletter, and the direct voicemail to my therapist.</p>

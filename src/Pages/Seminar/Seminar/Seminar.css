@@ -1,0 +1,33 @@
+#seminar-card{
+    box-shadow: 0 0 23px 0 rgb(62 28 131/13%);
+}
+
+#seminar:hover #seminar-card{
+    transform: scale(1.07);
+    transition: transform 1s linear;
+}
+
+@media only screen and (max-width: 688px) {
+    #seminar-details{
+        padding-left:16px !important;
+        padding-right:16px !important;
+        margin-left: 1px!important;
+    }
+    #seminar-info{
+        margin-left: 0!important;
+        padding: 0!important;
+    }
+    #seminar-card{
+        margin-left:6px!important;
+        margin-right:6px!important;
+    }
+    #seminar:hover #seminar-card{
+        transform: scale(1.03);
+    }
+}
+@media only screen and (min-width: 689px)and (max-width: 991px) {
+    #seminar-card{
+        margin-left:18px!important;
+        margin-right:18px!important;
+    }
+}

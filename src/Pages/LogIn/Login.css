@@ -1,0 +1,6 @@
+@media screen and (max-width:688px){
+    /* Login Form */
+    .login-heading{
+        font-size:31px !important;
+    }
+}

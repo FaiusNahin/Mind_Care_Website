@@ -1,6 +1,7 @@
 import React from 'react';
 import { Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import './Detail.css'
 
 const Detail = (props) => {
     const { name, img, description, benefitInfo, info1, info2, info3, info4, specalist, specalistThumb, serialDate } = props.detail
@@ -14,14 +15,14 @@ const Detail = (props) => {
                     <img className="" src={img} alt="" style={{ width: '60%' }} />
                 </div>
                 <div className="d-flex flex-column justify-content-center px-4 my-4">
-                    <h1 className="fw-bold" style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '50px', color: '#dd1c5d' }}>{name}</h1>
+                    <h1 className="fw-bold mb-0" style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '50px', color: '#dd1c5d' }}>{name}</h1>
                     <p className="text-black-50 mt-3" style={{ fontSize: '20px' }}>{description}</p>
 
-                    <h2 className="fw-bold mt-3 " style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '45px', color: 'rgb(102 96 96)' }}>Benefits of Therapy</h2>
+                    <h2 className="fw-bold my-3 " style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '45px', color: 'rgb(102 96 96)' }}>Benefits of Therapy</h2>
 
                     <p className="text-black-50 mb-4" style={{ fontSize: '20px' }}>{benefitInfo}</p>
 
-                    <div className="px-4 mt-2">
+                    <div id="infos" className="px-4 mt-2">
                         <p className="text-black-50" style={{ fontSize: '20px' }}>
                             <i className="fas fa-greater-than fs-6 me-3" style={{ color: 'rgb(238, 53, 115)' }}></i> {info1}</p>
                         <p className="text-black-50" style={{ fontSize: '20px' }}>
@@ -36,7 +37,7 @@ const Detail = (props) => {
 
             {/* Details Right */}
             {/* Specalist Info */}
-            <Col lg={4} md={12} sm={12} className="px-4 mt-5">
+            <Col lg={4} md={12} sm={12} className="px-4 mt-3">
                 <h2 className="fw-bold mt-3 mb-3" style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '45px', color: 'rgb(102 96 96)' }}>Specalist</h2>
                 <img className="w-100" src={specalistThumb} alt="" />
                 <h2 className="fw-bold mt-4 mb-0" style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '38px', color: '#dd1c5d' }}>{specalist}</h2>

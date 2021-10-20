@@ -1,0 +1,15 @@
+#notfound-img{
+    width: 50%;
+}
+
+@media screen and (max-width:688px){
+    #notfound-img{
+        width: 100%;
+    }
+  }
+
+@media only screen and (min-width:689px) and (max-width: 991px){
+    #notfound-img{
+        width: 80%;
+    }
+  }

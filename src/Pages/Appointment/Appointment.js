@@ -1,14 +1,15 @@
 import React from 'react';
+import './Appointment.css'
 import { Col, Container, Form, Row, Button } from 'react-bootstrap';
 import img from '../../images/appointment.png';
 
 const Appointment = () => {
     return (
-        <Container className="my-5">
-            <Row lg={2} md={1} sm={1} className="gx-5 pt-5">
+        <Container className="my-5 px-4">
+            <Row lg={2} md={1} sm={1} className="gx-5 pt-5 px-3">
 
                 {/* Appointment Left */}
-                <Col lg={6} md={12} sm={12} className=" border p-4 rounded-3 mb-5">
+                <Col lg={6} md={12} sm={12} className="border p-4 rounded-3 mb-5" id="form-container">
 
                     {/* Appointment Form */}
                     <Form>
@@ -42,10 +43,10 @@ const Appointment = () => {
 
                         <Row className=" flex-column flex-md-row justify-content-center">
                             <Form.Group as={Col} controlId="formGridEmail">
-                                <input type="date" name="date" value="" className="py-3 fs-5 wpcf7-form-control wpcf7-date wpcf7-validates-as-date form-control rt-date col mb-3" aria-invalid="false" />
+                                <input type="date" id="birthday" className="py-3 fs-5 form-control col mb-3 text-secondary" />
                             </Form.Group>
                             <Form.Group as={Col} controlId="formGridEmail">
-                                <input type="text" name="time" value="" size="40" className="py-3 fs-5 wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control col mb-3" aria-required="true" aria-invalid="false" placeholder="Time*" />
+                                <input type="time" id="appt" name="appt" className="text-secondary py-3 fs-5 form-control col mb-3" size="40" value="12:00" step="900" />
                             </Form.Group>
                         </Row>
 

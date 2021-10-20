@@ -3,16 +3,17 @@ import { Col, Container, Row } from 'react-bootstrap';
 import signature from '../../../images/signature.png';
 import './Psychologist.css'
 import { Link } from 'react-router-dom';
+import psychologist from '../../../images/sychologist-person.png'
 
 const Psychologist = () => {
     return (
-        <div id="psychologist-container">
+        <div id="psychologist-container" className="mx-0 px-3">
             <Container fluid="md">
                 <Row lg={2} md={1} sm={1} className="gx-5">
 
                     {/* Psychologist Left*/}
                     <Col lg={6} md={12} sm={12} id="psychologist-img">
-                        <img className="w-100" src='https://i.ibb.co/jM14LQL/sychologist-person.png' alt="" />
+                        <img className="w-100" src={psychologist} alt="" />
                     </Col>
 
                     {/* Psychologist Right*/}

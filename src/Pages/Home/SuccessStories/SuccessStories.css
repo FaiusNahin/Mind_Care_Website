@@ -9,7 +9,7 @@
     background-color: rgba(17, 17, 17, 0.6);
 }
 .success-container{
-    background-image: url('https://i.ibb.co/kGZqWd5/stories.jpg');
+    background-image: url(../../../images/stories.jpg);
     position: relative;
     text-align: center;
     padding: 80px 0px 180px;
@@ -23,7 +23,7 @@
 }
 #benifits::after{
     position: absolute;
-    top:200px;
+    top:205px;
     content: '';
     left: 50%;
     bottom: 0px;
@@ -43,4 +43,19 @@
     font-size:20px;
     font-style :italic;
     color: rgb(56, 53, 53);
+}
+
+@media screen and (max-width:688px){
+    #stories-1{
+        padding: 30px 19px !important;
+    }
+    #stories-2{
+        padding: 30px 20px !important;
+    }
+    #stories-img-1{
+        width: 50%;
+    }
+    #stories-img-2{
+        width: 50%;
+    }
 }
