@@ -4,7 +4,7 @@ const useSeminars = () => {
     const [seminars, setSeminars] = useState([]);
 
     useEffect(() => {
-        fetch('https://faiusnahin.github.io/therapyapi/seminar.json')
+        fetch('https://faiusnahin.github.io/mindcareAPI/seminar.json')
 
             .then(res => res.json())
             .then(data => setSeminars(data))
