@@ -12,7 +12,7 @@ Javascript\
 React\
 React Router.v5\
 React Hook Form\
-Firebase\
+Firebase
 
 ## Features
 
