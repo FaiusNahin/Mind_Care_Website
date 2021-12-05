@@ -1,6 +1,6 @@
 # Explore About "Mind Care"
 
-This project is a front-end development type project. This project build with JS React Router.\
+This project is a front-end development type project. This project build with JS, React & React Router.\
 You can see this [Live Site](https://healthcare-website-faiusnahin.web.app/).
 
 ## Uses Platform
